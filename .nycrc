@@ -1,0 +1,19 @@
+{
+  "reporter": [
+    "html",
+    "text",
+    "text-summary"
+  ],
+  "include": [
+    "src/*"
+  ],
+  "exclude": [
+    "src/**/*_spec.*"
+  ],
+  "require": [
+    "babel-register"
+  ],
+  "cache": true,
+  "sourceMap": false,
+  "instrument": false
+}

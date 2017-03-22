@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+  - "node"
+  - "6"
+  - "4"
+
+script:
+  - npm run travis-test
+  - npm run lint
+
+after_success:
+  - npm run travis-coverage
