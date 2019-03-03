@@ -1,6 +1,4 @@
-const webpack = require('webpack');
-
-module.exports = function () {
+module.exports = () => {
   return {
     module: {
       rules: [
@@ -13,23 +11,8 @@ module.exports = function () {
     },
     resolve: {
       modules: [
-        './src', './node_modules'
+        './src', './node_modules',
       ],
     },
-    plugins: [
-      new webpack.DefinePlugin({
-        'process.env': {
-          'NODE_ENV': JSON.stringify('production')
-        }
-      }),
-      new webpack.optimize.UglifyJsPlugin({
-        compress: {
-          warnings: false,
-        },
-        output: {
-          comments: false,
-        },
-      }),
-    ]
   };
 };

@@ -3,10 +3,11 @@
 
 # Input
 /src
+__tests__
 
 # Webpack
 /webpack
-webpack.config.js
+/*.config.js
 
 # Output
 /dist

@@ -6,13 +6,13 @@ module.exports = webpackMerge(commonConfig(), {
     'sinon-spy-utils': './src/index.js',
   },
   output: {
-    path: __dirname + '/../dist',
+    path: `${__dirname}/../dist`,
     filename: '[name].min.js',
     libraryTarget: 'umd',
-    library: 'SinonSpyUtils'
+    library: 'SinonSpyUtils',
   },
   externals: {
     // Use external version of Sinon.js
-    'sinon': 'sinon',
+    sinon: 'sinon',
   },
 });

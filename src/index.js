@@ -1,23 +1,23 @@
 import sinon from 'sinon';
 
 export const Mock = (...funcs) => {
-  let obj = {};
-  for (let func of funcs) {
+  const obj = {};
+  for (const func of funcs) {
     obj[func] = sinon.stub();
   }
   return obj;
 };
 
-let XXXAndDo = (sinonFunc, object, rest) => {
-  let methods = rest.slice(0, rest.length - 1), func = rest[rest.length - 1];
-  let results = {};
-  for (let method of methods) {
+const XXXAndDo = (sinonFunc, object, rest) => {
+  const methods = rest.slice(0, rest.length - 1), func = rest[rest.length - 1];
+  const results = {};
+  for (const method of methods) {
     results[method] = sinon[sinonFunc](object, method);
   }
   try {
     func(results);
   } finally {
-    for (let method of methods) {
+    for (const method of methods) {
       results[method].restore();
     }
   }
