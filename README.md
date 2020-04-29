@@ -1,4 +1,4 @@
-# sinon-spy-utils [![NPM Version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][coveralls-image]][coveralls-url] [![dependencies Status][deps-image]][deps-url] [![devDependencies Status][deps-dev-image]][deps-dev-url]
+# sinon-spy-utils [![NPM Version][npm-image]][npm-url] ![Build Status][ci-image] [![Coverage Status][coveralls-image]][coveralls-url] [![dependencies Status][deps-image]][deps-url] [![devDependencies Status][deps-dev-image]][deps-dev-url]
 
 This package is a collection of util functions to make your life easier when using [Sinon.js](http://sinonjs.org).
 At the moment, it contains *3* functions: `Mock` (creating fake objects), `SpyAndDo` (scoped spy) and `StubAndDo` (scoped stub).
@@ -124,14 +124,13 @@ This function will stub the listed functions of the provided object and call the
 
 ## License
 
-MIT, Copyright (c) 2017 Louis Brunner
+MIT, Copyright (c) 2017-2020 Louis Brunner
 
 
 
 [npm-image]: https://img.shields.io/npm/v/sinon-spy-utils.svg
 [npm-url]: https://npmjs.org/package/sinon-spy-utils
-[travis-image]: https://travis-ci.org/LouisBrunner/sinon-spy-utils.svg?branch=master
-[travis-url]: https://travis-ci.org/LouisBrunner/sinon-spy-utils
+[ci-image]: https://github.com/LouisBrunner/sinon-spy-utils/workflows/Build/badge.svg
 [coveralls-image]: https://coveralls.io/repos/github/LouisBrunner/sinon-spy-utils/badge.svg?branch=master
 [coveralls-url]: https://coveralls.io/github/LouisBrunner/sinon-spy-utils?branch=master
 [deps-image]: https://david-dm.org/louisbrunner/sinon-spy-utils/status.svg
