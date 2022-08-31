@@ -1,6 +1,6 @@
 {
   "name": "sinon-spy-utils",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Utility functions for Sinon Spies and Stubs",
   "author": "Louis Brunner <louis.brunner.fr@gmail.com> (https://github.com/LouisBrunner)",
   "license": "MIT",
